@@ -1,0 +1,94 @@
+[
+    {
+        "id": 1,
+        "name": "Normamat",
+        "password": 1,
+        "role": "admin",
+        "activity": "Admin",
+        "picUrl": "https://source.unsplash.com/H982yXJ7vOk/120x120"
+    },
+    {
+        "id": 2,
+        "name": "Bozorvoy",
+        "password": 2,
+        "role": "teacher",
+        "courses": 1,
+        "activity": "NodeJS O'qituvchisi",
+        "picUrl": "https://source.unsplash.com/7bMdiIqz_J4/120x120"
+    },
+    {
+        "id": 3,
+        "name": "Norbolta",
+        "password": 3,
+        "role": "teacher",
+        "courses": 2,
+        "activity": "ReactJS O'qituvchisi",
+        "picUrl": "https://source.unsplash.com/5L4ibEMAuN0/120x120"
+    },
+    {
+        "id": 4,
+        "name": "Xolmamat",
+        "password": 4,
+        "role": "student",
+        "activity": "ReactJS O'quvchisi",
+        "picUrl": "https://source.unsplash.com/1DjZV_ZyWK8/120x120"
+    },
+    {
+        "id": 5,
+        "name": "Tursunboy",
+        "password": 5,
+        "role": "teacher",
+        "activity": "Frontend O'quvchisi",
+        "picUrl": "https://source.unsplash.com/nzu-xTOEBlM/120x120"
+    },
+    {
+        "id": 6,
+        "name": "Eshmat",
+        "surname": "Toshmatov",
+        "role": "teacher",
+        "phone": "977805468",
+        "password": "1234"
+    },
+    {
+        "id": 7,
+        "name": "Xurshid",
+        "surname": "Juraev",
+        "role": "teacher",
+        "phone": "998935961451",
+        "password": "4"
+    },
+    {
+        "id": 8,
+        "name": "esfd",
+        "surname": "sdg",
+        "role": "teacher",
+        "phone": "935961451",
+        "password": "sdf"
+    },
+    {
+        "id": 9,
+        "name": "Eshmat",
+        "surname": "Toshmatov",
+        "role": "student",
+        "phone": "998935961451",
+        "password": "2"
+    },
+    {
+        "id": 10,
+        "name": "Normamat",
+        "surname": "Juraev",
+        "role": "student",
+        "phone": "998935961451",
+        "password": "2",
+        "courses": "2"
+    },
+    {
+        "id": 11,
+        "name": "safd",
+        "surname": "sfa",
+        "role": "teacher",
+        "phone": "935961451",
+        "password": "sfa",
+        "courses": "react"
+    }
+]

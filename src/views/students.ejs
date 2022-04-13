@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/student.css">
+    <title>CRM || Student Page</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="logo-section">
+        <i class="fas fa-crown"></i>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="search-section">
+        <div class="search-box">
+          <input type="text" class="input-box">
+          <i class="fas fa-search"></i>
+        </div>
+        <span class="date">06 May 2020</span>
+      </div>
+      <div class="profile-section">
+        <i class="far fa-bell"></i>
+        <div class="user-icon">
+          <img src="https://source.unsplash.com/NAdFJtFFlHE/120x120" />
+        </div>
+        <span class="user-name">Charles Merl</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+    <div class="header-two">
+      <div class="request-section">
+        <button class="request-button">Request for</button>
+      </div>
+      <div class="people-header">
+        <div class="people-header-left">
+          <h2>CRM EXAM 2</h2>
+          <ul>
+            <li class="active">All</li>
+            <li>Organization</li>
+          </ul>
+        </div>
+        <div class="people-header-right">
+          <div class="search-box">
+            <input type="text" placeholder="Search by name" class="input-box">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+      </div>
+      <div class="selected-team">
+        <p class="selected-team-title">SELECTED</p>
+        <h3 class="selected-team-name">Design Team</h3>
+      </div>
+    </div>
+    <div class="content-section">
+      <div class="nav-bar">
+        <ul class="nav-items">
+          <li class="nav-item">
+            <i class="fas fa-columns"></i>
+            <span></span>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-user-friends"></i>
+            <span></span>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-hand-holding-usd"></i>
+            <span></span>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-signal"></i>
+            <span></span>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-file"></i>
+            <span></span>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-calendar"></i>
+            <span></span>
+          </li>
+        </ul>
+        <ul class="nav-footer nav-items">
+          <li class="nav-item">
+            <i class="far fa-life-ring"></i>
+            <span></span>
+          </li>
+        </ul>
+        <button class="sign-out">
+          <i class="fas fa-power-off"></i>
+        </button>
+      </div>
+      <div class="main-content">
+        <div class="user-options">
+          <button class="button selected">
+            <label class="label-text">Design Team</label>
+            <span class="icon">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </button>
+          <button class="button">
+            <label class="label-text">Position</label>
+            <span class="icon">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </button>
+          <button class="button">
+            <label class="label-text">More</label>
+            <span class="icon">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </button>
+          <div class="sort">
+            <span class="sort-label">Sort by: </span>
+            <button class="sort-button">
+              <select name="users" id="">
+                <option value="All">All</option>
+                <option value="Teachers">Teachers</option>
+                <option value="Students">Students</option>
+                <option value="Admins">Admins</option>
+              </select>
+              <span class="icon">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </button>
+          </div>
+          <label for="checkbox_" class="checkbox-wrapper">
+            <input class="checkbox" id="checkbox_" type="checkbox" />
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-ellipsis-h"></i>
+            <div class="dot"></div>
+          </label>
+        </div>
+        <div class="user-cards">
+          <% groups.map(e => { %>
+          <div class="user-card">
+              <p class="user-name">Hozir Sizning Guruhingiz <%= e.ismi %></p>
+              <p class="user-name"><%= e.course %></p>
+              <p class="user-mail"><%= e.name %></p>
+          </div>
+        <% }) %>
+        </div>
+      </div>
+      <div class="aside-content">
+        <i class="fas fa-cog"></i>
+        <div class="graph">
+          <i class="fas fa-chevron-left"></i>
+          <div class="circle">
+            <p class="time-title">TIME LOG</p>
+            <p class="time-value">100%</p>
+          </div>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="project-stats">
+          <p class="projects-title">Projects</p>
+          <ul class="projects">
+            <li class="project">
+              <p class="project-title">TOTAL</p>
+              <p class="project-value" style="--stick-color:#395bd4">148</p>
+            </li>
+            <li class="project">
+              <p class="project-title">COMPLETED</p>
+              <p class="project-value" style="--stick-color:#6fc416">56</p>
+            </li>
+            <li class="project">
+              <p class="project-title">IN PROGRESS</p>
+              <p class="project-value" style="--stick-color:#54b5ff">76</p>
+            </li>
+            <li class="project">
+              <p class="project-title">WAITING</p>
+              <p class="project-value" style="--stick-color:#f7b500">16</p>
+            </li>
+          </ul>
+        </div>
+        <div class="declaration-wrapper">
+          <div class="declaration">
+            <div class="decl-box">
+              <i class="fas fa-comment-alt"></i>
+            </div>
+            <div class="decl-text">
+              <p class="decl-label">DECLARATION CENTER</p>
+              <p class="decl-message">Internal messages
+                <i class="fas fa-chevron-down"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/admin.css">
+    <title>CRM || Groups Page</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <div class="logo-section">
+        <i class="fas fa-crown"></i>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="search-section">
+        <div class="search-box">
+          <input type="text" class="input-box">
+          <i class="fas fa-search"></i>
+        </div>
+        <span class="date">06 May 2020</span>
+      </div>
+      <div class="profile-section">
+      </div>
+    </div>
+    <div class="header-two">
+      <div class="request-section">
+        <button class="request-button">Request for</button>
+      </div>
+      <div class="people-header">
+        <div class="people-header-left">
+          <h2>Barcha Guruhlar</h2>
+          <ul>
+            <li class="active">All</li>
+            <li>Organization</li>
+          </ul>
+        </div>
+        <div class="people-header-right">
+          <div class="search-box">
+            <input type="text" placeholder="Search by name" class="input-box">
+            <i class="fas fa-search"></i>
+          </div>
+        </div>
+      </div>
+      <div class="selected-team">
+      </div>
+    </div>
+    <div class="content-section">
+      <div class="nav-bar">
+        <ul class="nav-items">
+          <li class="nav-item active">
+            <i class="fas fa-columns"></i>
+            <span><a class="fas fa-columns nav-item" href="http://localhost:9000/groups">Guruhlar</a></span>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-user-friends"></i>
+            <span><a class="fas fa-columns nav-item" href="http://localhost:9000/admin">Barcha</a></span>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-hand-holding-usd"></i>
+            <span><a class="fas fa-columns nav-item" href="http://localhost:9000/courses">Kurslar</a></span>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-file"></i>
+            <span><a class="fas fa-columns nav-item" href="http://localhost:9000/student">O'quvchilar</a></span>
+          </li>
+        </ul>
+        <ul class="nav-footer nav-items">
+          <li class="nav-item">
+            <i class="far fa-life-ring"></i>
+            <span>Support</span>
+          </li>
+        </ul>
+        <button class="sign-out">
+          <i class="fas fa-power-off"></i>
+        </button>
+      </div>
+      <div class="main-content">
+        <div class="user-options">
+          <button class="button selected">
+            <label class="label-text">Design Team</label>
+            <span class="icon">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </button>
+          <button class="button">
+            <label class="label-text">Position</label>
+            <span class="icon">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </button>
+          <button class="button">
+            <label class="label-text">More</label>
+            <span class="icon">
+              <i class="fas fa-chevron-down"></i>
+            </span>
+          </button>
+          <div class="sort">
+            <span class="sort-label">Sort by: </span>
+            <button class="sort-button">
+              <select name="users" id="" class="input-box72">
+                <option value="All">All</option>
+                <option value="Teachers">Teachers</option>
+                <option value="Students">Students</option>
+                <option value="Admins">Admins</option>
+              </select>
+              <span class="icon">
+                <i class="fas fa-chevron-down"></i>
+              </span>
+            </button>
+          </div>
+          <label for="checkbox_" class="checkbox-wrapper">
+            <input class="checkbox" id="checkbox_" type="checkbox" />
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-ellipsis-h"></i>
+            <div class="dot"></div>
+          </label>
+        </div>
+        <div class="user-cards">
+            <% group.map(e => { %>
+              <div class="user-card">
+                <i class="fas fa-ellipsis-v"></i>
+                <p class="user-name">Guruh nomi: <%= e.ismi %></p>
+                <p class="user-mail">Guruh Raqami: <%= e.name %></p>
+                <ul class="progress-status">
+                  <i class="far fa-clock"></i>
+                  <li style="--color:#2b51d6;--width:100%"></li>
+                  <li style="--color:#577bf9;--width:100%"></li>
+                  <li style="--color:#54b5ff;--width:100%"></li>
+                  <span>100%</span>
+                </ul>
+              </div>
+            <% }) %>
+          </div>
+      </div>
+      <div class="aside-content">
+        <div class="project-stats">
+          <p class="projects-title">Guruh Qo'shish</p>
+
+          <form class="form_login" action="/newGroup" method="POST" enctype="application/x-www-form-urlencoded">
+        <div>
+          <input class="input-box12" type="text" name="name" placeholder="Guruh Nomi..." required />
+        </div>
+        <div>
+          <input class="input-box12" type="text" name="ismi" placeholder="Guruh Raqami..." required />
+        </div>
+
+        <select name="courses" class="input-box72">
+          <option class="input-box72" value="react">N15</option>
+          <option class="input-box72" value="node">N72</option>
+        </select>
+        <button class="request-buttonAll">Add</button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>

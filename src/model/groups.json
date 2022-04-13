@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "ismi": "Node",
+        "name": "N15",
+        "course": 1
+    },
+    {
+        "id": "2",
+        "name": "N20",
+        "ismi": "Python",
+        "course": 2
+    }
+]
